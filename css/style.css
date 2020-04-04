@@ -1,0 +1,125 @@
+@font-face{
+    font-family:'VazirLight';
+    src:url("../fonts/vazir/Vazir-Light-FD.eot");
+    src:url("../fonts/vazir/Vazir-Light-FD.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir/Vazir-Light-FD.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Light-FD.ttf") format("ttf"),
+    url("../fonts/vazir/Vazir-Light-FD.svg") format("svg")}
+@font-face{
+    font-family:'VazirBold';
+    src:url("../fonts/vazir/Vazir-Bold-FD.eot");
+    src:url("../fonts/vazir/Vazir-Bold-FD.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir/Vazir-Bold-FD.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Bold-FD.ttf") format("ttf"),
+    url("../fonts/vazir/Vazir-Bold-FD.svg") format("svg")}
+@font-face{
+    font-family:'VazirThin';
+    src:url("../fonts/vazir/Vazir-Thin-FD.eot");
+    src:url("../fonts/vazir/Vazir-Thin-FD.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir/Vazir-Thin-FD.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Thin-FD.ttf") format("ttf"),
+    url("../fonts/vazir/Vazir-Thin-FD.svg") format("svg")}
+
+body {
+    background: #F4F4F2 ;
+    color: #444444;
+    height: 100vh;
+}
+.loginSection {
+    background: white ;
+    border-radius: 2px 6px;
+    padding: 40px 30px 20px;
+    box-shadow: 0px 0px 13px 5px rgba(143, 143, 143, 0.267);
+}
+.titlePortal {
+    font-family: VazirBold;
+    margin-bottom: 20px;
+    color: #037e8c ;
+    font-size: 26px;
+    position: relative;
+
+}
+.titlePortal span {
+    background: #F4F4F2;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.titlePortal::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: rgba(6, 101, 122, 0.473) ;
+    left: 0;
+    right: 0;
+    top: 24px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: VazirBold;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 20px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    background-color: #39ace7;
+  }
+  
+  input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  
+  input[type=text] , input[type=password] {
+    background-color: #f6f6f6;
+    font-family: VazirThin;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  input[type=text]:focus ,input[type=password]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  input[type=text]:placeholder , input[type=password]:placeholder {
+    color: #cccccc;
+  }

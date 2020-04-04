@@ -1,0 +1,77 @@
+
+@font-face{
+    font-family:'VazirLight';
+    src:url("../fonts/vazir/Vazir-Light-FD.eot");
+    src:url("../fonts/vazir/Vazir-Light-FD.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir/Vazir-Light-FD.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Light-FD.ttf") format("ttf"),
+    url("../fonts/vazir/Vazir-Light-FD.svg") format("svg")}
+@font-face{
+    font-family:'VazirBold';
+    src:url("../fonts/vazir/Vazir-Bold-FD.eot");
+    src:url("../fonts/vazir/Vazir-Bold-FD.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir/Vazir-Bold-FD.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Bold-FD.ttf") format("ttf"),
+    url("../fonts/vazir/Vazir-Bold-FD.svg") format("svg")}
+@font-face{
+    font-family:'VazirThin';
+    src:url("../fonts/vazir/Vazir-Thin-FD.eot");
+    src:url("../fonts/vazir/Vazir-Thin-FD.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir/Vazir-Thin-FD.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Thin-FD.ttf") format("ttf"),
+    url("../fonts/vazir/Vazir-Thin-FD.svg") format("svg")}
+
+body {
+    background: #222222 ;
+    color: #ddd;
+    height: 100vh;
+}
+.mainBody {
+    position: relative;
+}
+.logo img {
+    height: 100px;
+    position: absolute;
+    left: 30px;
+    margin-top: 0px;
+}
+.sectionTexts {
+    margin-top: 100px;
+}
+.Links {
+    width: 142px;
+}
+.linkBtn {
+    display: inline-block;
+    background-color: #444444;
+    padding: 2px 4px 4px;
+    position: relative;
+    width: 142px;
+    top: -28px;
+    left: -6px;
+}
+a {
+    color: #ffffff;
+}
+a:hover {
+    color: #ddd;
+}
+h1 {
+    position: relative;
+    display: inline-block;
+    left: -10px;
+}
+h1 span {
+    display: block;
+    position: relative;
+    top: -10px;
+    left: 31px;
+}
+h1 span .squre {
+    position: absolute;
+    height: 29px;
+    width: 20px;
+    bottom: 8px;
+    left: -27px;
+    background-color: #ddd;
+}
