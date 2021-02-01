@@ -13,7 +13,7 @@
   <b>♠️ About Me! </b>
   </summary>
 <p align="center">
-  I'm an MSc student in Optimization in Industrial Engineering, learning and interested in Artificial Intelligence (DL, ML, NND, and more), Supply Chain and Control project, and Financial Engineering.
+  I'm MSc student in Optimization in Industrial Engineering, learning and interested in Artificial Intelligence (DL, ML, NND, and more), Supply Chain and Control project, and Financial Engineering.
   </br>
 Skilled in Python (AI, ML, DL), MS Power BI, Tableau, MS Project, and Excel, and COMFAR.
   </br>
