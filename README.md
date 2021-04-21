@@ -19,7 +19,9 @@ Skilled in Python (AI, ML, DL), MS Power BI, Tableau, MS Project, and Excel, and
   </br>
 And I love to learn CEH, Sociology and Open Source Society.
 </p>
-
+</br>
+</br>
+[![Twitter Follow](https://img.shields.io/twitter/follow/MKarimi21?label=Follow&style=social)](https://twitter.com/mkarimi21)
 -----
 
 </details>
