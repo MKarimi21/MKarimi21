@@ -3,7 +3,7 @@
     <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortWaved&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=Hoodie&clotheColor=Black&eyeType=Wink&eyebrowType=Default&mouthType=Smile&skinColor=Light' width="100" height="100">
   </a>
 </p>
-<h3 align="center">Hi, I'm Mostafa Karimi 👋</h3>
+<h3 align="center">Hi, I'm Mostafa Karimi &nbsp; <img src="https://github.com/kogisin/kogisin/blob/main/gifs/hi.gif" width="35px"></h3> 
 </br>
 
 
@@ -23,6 +23,9 @@
   And I love to learn CEH, Cryptography, Open Source Society and Sociology.
 </p>
 </br>
+<p align="left">
+    <img align="centre" src="https://github-readme-stats-eight-theta.vercel.app/api?username=mkarimi21&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=00000000&theme=tokyonight" height=180px/><img height="120px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mkarimi21&hide=html&hide_title=true&hide_border=true&layout=compact&langs_count=8&theme=tokyonight&bg_color=00000000" />
+</p>
 </br>
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/MKarimi21?label=Follow&style=social)](https://twitter.com/mkarimi21)
