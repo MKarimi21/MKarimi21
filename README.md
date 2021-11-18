@@ -12,19 +12,22 @@
 
 <b>♠️ About Me! </b>
 
-<p class="text-justify">
+
+<p class="text-justify" align="left">
 
   I am an MSc in systems optimization and my skill in the field of Machine Learning engineering and Planning and Project Control. I have recently entered Deep Learning engineering and I am interested in working professionally in this field and make business intelligence or etc.
   <br>
   I'm Skilled in Python, MS Power BI and Tableau, MS Project and Excel, and COMFAR.
   <br>
   And I love to learn CEH, Cryptography, Open Source Society and Sociology.
+
+
 </p>
+
+<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="github-metrics.svg" align="center" width="70%"></img></a>  
+
+
 <br>
-
-<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="left-metrics.svg" align="right" width="47.5%"></img></a>
-
-
 
 -----
 
