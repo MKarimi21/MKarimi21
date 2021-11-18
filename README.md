@@ -22,7 +22,7 @@
 </p>
 <br>
 
-<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="github-metrics.svg" align="center" width="47.5%"></img></a>
+<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="left-metrics.svg" align="center" width="47.5%"></img></a>
 
 
 
