@@ -22,8 +22,7 @@
 </p>
 <br>
 
-
-![Metrics](https://metrics.lecoq.io/mkarimi21?template=classic&languages=1&isocalendar=1&introduction=1&lines=1&projects=1&activity=1&tweets=1&stars=1&achievements=1&notable=1&isocalendar.duration=full-year&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.aliases=python&languages.threshold=0%25&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&introduction.title=true&stars.limit=4&projects.limit=4&projects.repositories=https%3A%2F%2Fgithub.com%2FUniversity-of-Bojnurd%2FOptimization-MSc%2C%20https%3A%2F%2Fgithub.com%2FMKarimi21%2FDataMining_Tutorial&projects.descriptions=false&activity.limit=5&activity.load=300&activity.days=14&activity.filter=all&activity.visibility=all&activity.timestamps=false&achievements.threshold=C&achievements.secrets=true&achievements.display=detailed&achievements.limit=0&notable.from=organization&notable.repositories=false&tweets.attachments=false&tweets.limit=2&tweets.user=mkarimi21&config.timezone=Asia%2FTehran&config.display=large)
+<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="github-metrics.svg" align="left" width="47.5%"></img></a>
 
 
 
