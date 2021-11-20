@@ -21,7 +21,7 @@
   <br>
   I'm Skilled in Python, MS Power BI and Tableau, MS Project and Excel, and COMFAR.
   <br>
-  And I love to learn CEH, Cryptography, Open Source Society and Sociology.
+  And I love to learn CEH, Cryptography, Open Source Society and Sociology. 🙂
 
 
 </p>
