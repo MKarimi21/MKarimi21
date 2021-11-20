@@ -26,8 +26,8 @@
 
 </p>
 
-<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="metric-left.svg" align="right" width="47.5%"></img></a>  
-<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="github-metrics.svg" align="left" width="47.5%"></img></a>  
+<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="metric-left.svg" align="left" width="47.5%"></img></a>  
+<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="github-metrics.svg" align="right" width="47.5%"></img></a>  
 
 
 <br>
