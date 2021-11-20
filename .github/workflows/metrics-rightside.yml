@@ -19,6 +19,7 @@ jobs:
           user: mkarimi21
           template: classic
           base: ""
+          filename: metrics-rightside.svg
           config_timezone: Asia/Tehran
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
