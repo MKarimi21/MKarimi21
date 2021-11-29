@@ -1,5 +1,5 @@
 ::selection {
-    background: #57C3B6;
+    background: #0f2b5f;
 }
 
 html, body {
@@ -11,7 +11,7 @@ html, body {
 body {
     font-size: 13pt;
     font-family: monospace;
-    color: white;
+    color: rgb(22, 230, 39);
     background-color: black;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .green {
-    color: #009b64;
+    color: #ffffff;
 }
 
 .input-line {
@@ -111,7 +111,7 @@ body {
     z-index: 9;
     top: 0;
     left: 0;
-    background-color: #009b64;
+    background-color: #020c9b;
     opacity: 0.8;
     overflow-x: hidden;
     transition: 0.3s;
@@ -170,6 +170,6 @@ body {
 
 @media screen and (min-width: 721px) {
     #sidenav button:hover {
-        color: #004f32;
+        color: #030d91;
     }
 }

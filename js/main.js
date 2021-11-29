@@ -50,7 +50,7 @@ var configs = (function () {
         accesible_cores: isUserPT ? "NÃºcleos acessÃ­veis" : "Accessible cores",
         language: isUserPT ? "Idioma" : "Language",
         value_token: "<value>",
-        host: "lbraganca.pt",
+        host: "mkarimi21.ir",
         user: "guest",
         is_root: false,
         type_delay: 20
