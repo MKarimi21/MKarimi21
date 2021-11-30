@@ -74,12 +74,13 @@ var files = (function () {
     };
     Singleton.defaultOptions = {};
     Singleton.defaultOptions[(isUserPT ? " " : "about.txt")] = isUserPT ? " " : "\nThis website was made using only pure JavaScript with no extra libraries.\n";
-    Singleton.defaultOptions[(isUserPT ? "interesses.txt" : "interests.txt")] = isUserPT ? " " : "\n+> My interests are mostly:\n- Python Programming :D\n- Machine Learning and Deep Learning Libraries in Python\n=> more than all, Natural Language Processing and Time Series or Sequential model\n- Microsoft Project\n- Microsoft Power BI and Excel\n- Tableau\n- COMFAR\n=> And I love to learn CEH, Cryptography, Open Source Society and Sociology. :)\n";
+    Singleton.defaultOptions[(isUserPT ? " " : "interests.txt")] = isUserPT ? " " : "\n+> My interests are mostly:\n- Python Programming :D\n- Machine Learning and Deep Learning Libraries in Python\n=> more than all, Natural Language Processing and Time Series or Sequential model\n- Microsoft Project\n- Microsoft Power BI and Excel\n- Tableau\n- COMFAR\n=> And I love to learn CEH, Cryptography, Open Source Society and Sociology. :)\n";
     Singleton.defaultOptions[(isUserPT ? " " : "academic_info.txt")] = isUserPT ? " " : "\n+> I got my bachelor's degree in industrial engineering in 2018. My expertise at that time in the field:\n- Planning and project control \n-  Economic feasibility of projects \n- Multiple criteria decision making\n\n+> In 2019, I entered the field of systems optimization at the master's level and I am still a student at this level. My field at this level is: \n- Time Series Forecasting\n - Machine Learning \n- Deep Learning \n- Natural Language Processing and I want to experience at the top level in this field \n";
     Singleton.defaultOptions["linkedin.txt"] = "https://www.linkedin.com/in/mkarimi21/";
     Singleton.defaultOptions["github.txt"] = "https://github.com/mkarimi21/";
     Singleton.defaultOptions[(isUserPT ? " " : "other_info.txt")] = isUserPT ? " " : "\n!! I will complete it very soon <3 =) !!\n";
     Singleton.defaultOptions[(isUserPT ? " " : "contact.txt")] = "\nsend email to me: mkarimi21@hotmail.com\n";
+    Singleton.defaultOptions["Back_to_Home.txt"] = "https://mkarimi21.ir/";
     return {
         getInstance: function (options) {
             instance === void 0 && (instance = new Singleton(options));
