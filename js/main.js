@@ -20,35 +20,36 @@ var configs = (function () {
         }
     };
     Singleton.defaultOptions = {
-        general_help: isUserPT ? "Em baixo consta uma lista com todos os comandos possÃ­veis de utilizar.\nÃ‰ possÃ­vel recorrer ao auto-preenchimento recorrendo Ã  tecla TAB que por sua vez autocompleta se apenas existir 1 possibilidade, ou apresenta uma lista com todas as possibilidades caso contrÃ¡rio." : "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
-        ls_help: isUserPT ? "Apresenta informaÃ§Ã£o relativamente a todos os ficheiros e pastas (presentes no diretÃ³rio atual)." : "List information about the files and folders (the current directory by default).",
-        cat_help: isUserPT ? "LÃª FICHEIRO(s) e imprime o seu conteÃºdo no dispositivo de output standard (ecrÃ£)." : "Read FILE(s) content and print it to the standard output (screen).",
-        whoami_help: isUserPT ? "Apresenta o nome do utilizador associado ao ID do utilizador atual e alguma informaÃ§Ã£o complementar." : "Print the user name associated with the current effective user ID and more info.",
-        date_help: isUserPT ? "Apresenta a data e hora do sistema." : "Print the system date and time.",
-        help_help: isUserPT ? "Apresenta este menu." : "Print this menu.",
-        clear_help: isUserPT ? "Limpa o ecrÃ£ do terminal." : "Clear the terminal screen.",
-        reboot_help: isUserPT ? "Reinicia o sistema." : "Reboot the system.",
-        cd_help: isUserPT ? "Altera o diretÃ³rio atual." : "Change the current working directory.",
-        mv_help: isUserPT ? "Move (renomeia) ficheiros." : "Move (rename) files.",
-        rm_help: isUserPT ? "Remove ficheiros ou diretÃ³rios." : "Remove files or directories.",
-        rmdir_help: isUserPT ? "Remove um diretÃ³rio, funcionando somente se as pastas estiverem vazias." : "Remove directory, this command will only work if the folders are empty.",
-        touch_help: isUserPT ? "Altera os timestamps de um ficheiro. Caso o ficheiro nÃ£o exista, Ã© criado um vazio." : "Change file timestamps. If the file doesn't exist, it's created an empty one.",
-        sudo_help: isUserPT ? "Executa um comando com direitos de superutilizador." : "Execute a command as the superuser.",
-        welcome: isUserPT ? "Bem-vind@ ao meu website pessoal! :)\nO meu nome Ã© LuÃ­s BraganÃ§a, sou Engenheiro de Software e um full-stack developer web e mobile.\nAtualmente, sou estudante de Mestrado em Engenharia de Software no Instituto Politecnico de SetÃºbal.\nProfissionalmente, sou um software developer na Cast, Lda.\nVamos dar inÃ­cio: Pode executar o comando 'help' ou usar o menu verde mais intuitivo que se encontra Ã  sua esquerda.\nPara ignorar o texto corrido prima/clique duas vezes em qualquer local na pÃ¡gina." : "Welcome to my personal website! :)\nMy name is LuÃ­s BraganÃ§a, I'm a Software Engineer and a full-stack web and mobile developer.\nCurrently, I'm a Master's student in Software Engineering in the Polytechnic Institute of SetÃºbal.\nCarrer-wise, I'm a software developer in Cast, Lda.\nNow in order to get started, feel free to either execute the 'help' command or use the more user-friendly green sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.",
-        internet_explorer_warning: isUserPT ? "NOTA: Acontece que se encontra a usar o internet explorer, este website nÃ£o funcionarÃ¡ correctamente uma vez que o seu suporte nÃ£o Ã© garantido." : "NOTE: I see you're using internet explorer, this website won't work properly.",
-        welcome_file_name: isUserPT ? "mensagem_boas_vindas.txt" : "welcome_message.txt",
-        invalid_command_message: "<value>: " + (isUserPT ? "comando nÃ£o encontrado." : "command not found."),
-        reboot_message: isUserPT ? "A preparar para reiniciar...\n\n3...\n\n2...\n\n1...\n\nA reiniciar...\n\n" : "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
-        permission_denied_message: isUserPT ? "NÃ£o foi foi possÃ­vel executar '<value>', permissÃ£o negada." : "Unable to '<value>', permission denied.",
-        sudo_message: isUserPT ? "NÃ£o Ã© possÃ­vel recorrer ao sudo atravÃ©s de um cliente web." : "Unable to sudo using a web client.",
-        usage: isUserPT ? "Modo de utilizaÃ§Ã£o" : "Usage",
-        file: isUserPT ? "ficheiro" : "file",
-        file_not_found: isUserPT ? "Ficheiro '<value>' nÃ£o encontrado." : "File '<value>' not found.",
-        username: isUserPT ? "Nome de utilizador" : "Username",
-        hostname: isUserPT ? "Nome do host" : "Host",
-        platform: isUserPT ? "Plataforma" : "Platform",
-        accesible_cores: isUserPT ? "NÃºcleos acessÃ­veis" : "Accessible cores",
-        language: isUserPT ? "Idioma" : "Language",
+        general_help: isUserPT ? " " : "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.\n",
+        ls_help: isUserPT ? " " : "List information about the files and folders (the current directory by default).",
+        cat_help: isUserPT ? " " : "Read FILE(s) content and print it to the standard output (screen).",
+        whoami_help: isUserPT ? " " : "Print the user name associated with the current effective user ID and more info.",
+        date_help: isUserPT ? " " : "Print the system date and time.",
+        help_help: isUserPT ? " " : "Print this menu.",
+        clear_help: isUserPT ? " " : "Clear the terminal screen.",
+        reboot_help: isUserPT ? " " : "Reboot the system.",
+        cd_help: isUserPT ? " " : "Change the current working directory.",
+        mv_help: isUserPT ? " " : "Move (rename) files.",
+        rm_help: isUserPT ? " " : "Remove files or directories.",
+        rmdir_help: isUserPT ? " " : "Remove directory, this command will only work if the folders are empty.",
+        touch_help: isUserPT ? " " : "Change file timestamps. If the file doesn't exist, it's created an empty one.",
+        sudo_help: isUserPT ? " " : "Execute a command as the superuser.",
+        welcome: isUserPT ? " " : "\nWelcome to my personal website! :)\nMy name is Mostafa Karimi, You see my information on the home page so, here I want to describe me, detailly. :D\n First, this page was edited from LuÃ­s BraganÃ§a page's so, this terminal license is MIT and you can edit and use it for yours\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!........  ....!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!.................!!!!!!!!!!!!\n!!!!!!!!!!!!!!..................!!!!!!!!!!!\n!!!!!!!!!!!!#...%%%%%%/,/%%%%#...,!!!!!!!!!\n!!!!!!!!!###..%%%%%%%%%%%%%%%%%,..###!!!!!!\n!!!!!!#######.%%%%**%%%%%%**%%%%.######*!!!\n!!!!!#######..(%%%%%%....%%%%%%/..#######!!\n!!!!########%.%%%%#%%.%%.%%%%%%%.%########!\n!!!#########%.%#/,/#%####%#*,#%%.%#########\n!!!###########.%%%./@@@@@@..%%%.###########\n!!*############....%%((((%%....############\n!!!##############............##############\n!!!###########,....%######%..../###########\n!!!!#########......%%%%%%%%......#########!\n!!!!!####...........*%%%%............###%!!\n!!!!!!!*.........@..........@.........(!!!!\n!!!!!!!!!,.......@..........@.......!!!!!!!\n!!!!!!!!!!!!!....@..........@....!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\nI'm a Deep Learning Engineering (Newcomer) and Planning and project control specialist.\nNow in order to get started, feel free to either execute the 'help' command or use the more user-friendly blue sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.\n",
+
+        internet_explorer_warning: isUserPT ? " " : "NOTE: I see you're using internet explorer, this website won't work properly.",
+        welcome_file_name: isUserPT ? " " : "welcome_message.txt",
+        invalid_command_message: "<value>: " + (isUserPT ? " " : "command not found."),
+        reboot_message: isUserPT ? " " : "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
+        permission_denied_message: isUserPT ? " " : "Unable to '<value>', permission denied.",
+        sudo_message: isUserPT ? " " : "Unable to sudo using a web client.",
+        usage: isUserPT ? " " : "Usage",
+        file: isUserPT ? " " : "file",
+        file_not_found: isUserPT ? " " : "File '<value>' not found.",
+        username: isUserPT ? " " : "Username",
+        hostname: isUserPT ? " " : "Host",
+        platform: isUserPT ? " " : "Platform",
+        accesible_cores: isUserPT ? " " : "Accessible cores",
+        language: isUserPT ? " " : "Language",
         value_token: "<value>",
         host: "mkarimi21.ir",
         user: "guest",
@@ -72,13 +73,13 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {};
-    Singleton.defaultOptions[(isUserPT ? "sobre.txt" : "about.txt")] = isUserPT ? "Este website foi elaborado usando somente JavaScript puro sem recorrer a bibliotecas.\nFoi feito de forma genÃ©rica permitindo assim que qualquer pessoa o use, bastando para isso apenas realizar o download do GitHub e alterar os textos de configuraÃ§Ã£o de acordo com as suas necessidades.\nSe encontrar algum bug ou vulnerabilidade peÃ§o que me contacte para: luisbraganca@protonmail.com" : "This website was made using only pure JavaScript with no extra libraries.\nI made it dynamic so anyone can use it, just download it from GitHub and change the config text according to your needs.\nIf you manage to find any bugs or security issues feel free to email me: luisbraganca@protonmail.com";
-    Singleton.defaultOptions[(isUserPT ? "interesses.txt" : "interests.txt")] = isUserPT ? "Os meus interesses passam principalmente por:\n- Java\n- Node.js\n- React (e React Native)\n- Android\n- Engenharia de Software\n- Common Lisp\n- SeguranÃ§a\nE muito mais.\nNo entanto, ainda assim tenho competÃªncias em ASP.NET, SQL e UML.\nPessoalmente, acredito que mais importante do que saber o 'como', Ã© saber o 'porquÃª'." : "My interests are mostly:\n- Java\n- Node.js\n- React (and React Native)\n- Android\n- Software Engineering\n- Common Lisp\n- Security\nAnd a lot more.\nHowever, I also have skills in ASP.NET, SQL and UML.\nI believe that more important than knowing 'how' it works, is knowing 'why' it works.";
-    Singleton.defaultOptions[(isUserPT ? "educaÃ§Ã£o.txt" : "academic_info.txt")] = isUserPT ? "2017, Instituto PolitÃ©cnico de SetÃºbal, Mestrado em Engenharia de Software\nUnidades curriculares principais:\n- ProgramaÃ§Ã£o AvanÃ§ada para a Internet\n- Qualidade de Software\n- SeguranÃ§a de InformaÃ§Ã£o e de Software\n- AnÃ¡lise de Dados\n- VisualizaÃ§Ã£o de InformaÃ§Ã£o\n- Marketing Digital\n- ExtraÃ§Ã£o AutomÃ¡tica de InformaÃ§Ã£o\n2013, Instituto PolitÃ©cnico de SetÃºbal, Licenciatura em Engenharia InformÃ¡tica\nUnidades curriculares principais:\n- Engenharia de Software\n- InteligÃªncia Artificial\n- ProgramaÃ§Ã£o Para a Internet\n- ProgramaÃ§Ã£o Orientada por Objetos\n- ProgramaÃ§Ã£o AvanÃ§ada\n- ComputaÃ§Ã£o MÃ³vel\n- ComputaÃ§Ã£o DistribuÃ­da\n- Bases de Dados\n- Sistemas Operativos\n- Redes de Computadores" : "2017, Polytechnic Institute of SetÃºbal, Master's degree in Software Engineering\nMain subjects:\n- Advanced Internet Computing\n- Software Quality\n- Information and Software Security\n- Data Analysis\n- Information Visualization\n- Digital Marketing\n- Automated Information Extraction\n2013, Polytechnic Institute of SetÃºbal, Licentiate degree in Informatics Engineering\nMain subjects:\n- Software Engineering\n- Artificial Intelligence\n- Internet Computing\n- Object Oriented Programming\n- Advanced Programming\n- Mobile Computing\n- Distributed Computing\n- Databases\n- Operating Systems\n- Computer Networks";
-    Singleton.defaultOptions["linkedin.txt"] = "https://www.linkedin.com/in/luisbraganca/";
-    Singleton.defaultOptions["github.txt"] = "https://github.com/luisbraganca/";
-    Singleton.defaultOptions[(isUserPT ? "outras_informaÃ§Ãµes.txt" : "other_info.txt")] = isUserPT ? "Sou um mÃºsico com competÃªncias em composiÃ§Ã£o e produÃ§Ã£o musical, usando ferramentas tais como:\n- Fruity Loops Studio\n- REAPER Digital Audio Workstation\n- Magnus Choir\n - Edirol Orchestral.\nTive 5 anos de aulas de teoria musical e sei tocar:\n- Baixo elÃ©trico (instrumento principal)\n- Guitarra elÃ©trica\n- Guitarra acÃºstica\n- Bateria\n- Teclado" : "I'm a musician with both producing and composing skills using tools such as:\n- Fruity Loops Studio\n- REAPER Digital Audio Workstation\n- Magnus Choir\n- Edirol Orchestral.\nHad 5 years of musical theory lessons and I know how to play:\n- Electric bass (main instrument)\n- Electric guitar\n- Classical guitar\n- Drums\n- Keyboard";
-    Singleton.defaultOptions[(isUserPT ? "contacto.txt" : "contact.txt")] = "luisbraganca@protonmail.com";
+    Singleton.defaultOptions[(isUserPT ? " " : "about.txt")] = isUserPT ? " " : "\nThis website was made using only pure JavaScript with no extra libraries.\n";
+    Singleton.defaultOptions[(isUserPT ? "interesses.txt" : "interests.txt")] = isUserPT ? " " : "\n+> My interests are mostly:\n- Python Programming :D\n- Machine Learning and Deep Learning Libraries in Python\n=> more than all, Natural Language Processing and Time Series or Sequential model\n- Microsoft Project\n- Microsoft Power BI and Excel\n- Tableau\n- COMFAR\n=> And I love to learn CEH, Cryptography, Open Source Society and Sociology. :)\n";
+    Singleton.defaultOptions[(isUserPT ? " " : "academic_info.txt")] = isUserPT ? " " : "\n+> I got my bachelor's degree in industrial engineering in 2018. My expertise at that time in the field:\n- Planning and project control \n-  Economic feasibility of projects \n- Multiple criteria decision making\n\n+> In 2019, I entered the field of systems optimization at the master's level and I am still a student at this level. My field at this level is: \n- Time Series Forecasting\n - Machine Learning \n- Deep Learning \n- Natural Language Processing and I want to experience at the top level in this field \n";
+    Singleton.defaultOptions["linkedin.txt"] = "https://www.linkedin.com/in/mkarimi21/";
+    Singleton.defaultOptions["github.txt"] = "https://github.com/mkarimi21/";
+    Singleton.defaultOptions[(isUserPT ? " " : "other_info.txt")] = isUserPT ? " " : "\n!! I will complete it very soon <3 =) !!\n";
+    Singleton.defaultOptions[(isUserPT ? " " : "contact.txt")] = "\nsend email to me: mkarimi21@hotmail.com\n";
     return {
         getInstance: function (options) {
             instance === void 0 && (instance = new Singleton(options));
