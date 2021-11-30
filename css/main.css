@@ -112,7 +112,7 @@ body {
     top: 0;
     left: 0;
     background-color: #020c9b;
-    opacity: 0.8;
+    opacity: 0.85;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -142,6 +142,13 @@ body {
     transition: 0.3s;
     background: none !important;
     border: none;
+}
+#sidenav button:hover {
+    color: rgb(255, 0, 0) !important;
+}
+
+#sidenav #sidenavBtn:hover {
+    color: rgb(9, 230, 83) !important;
 }
 
 @media screen and (max-height: 450px) {
