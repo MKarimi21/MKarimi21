@@ -34,7 +34,7 @@ var configs = (function () {
         rmdir_help: isUserPT ? " " : "Remove directory, this command will only work if the folders are empty.",
         touch_help: isUserPT ? " " : "Change file timestamps. If the file doesn't exist, it's created an empty one.",
         sudo_help: isUserPT ? " " : "Execute a command as the superuser.",
-        welcome: isUserPT ? " " : "\nWelcome to my personal website! :)\nMy name is Mostafa Karimi, You see my information on the home page so, here I want to describe me, detailly. :D\n First, this page was edited from LuÃ­s BraganÃ§a page's so, this terminal license is MIT and you can edit and use it for yours\n\nI'm a Deep Learning Engineering (Newcomer) and Planning and project control specialist.\nNow in order to get started, feel free to either execute the 'help' command or use the more user-friendly blue sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.\n",
+        welcome: isUserPT ? " " : "\nWelcome to my personal website! :)\nMy name is Mostafa Karimi. I have master's degree in industrial engineering. You can see my information on the home page so, here I want to introduce myself in details. :D\nI had edited this page from LuÃ­s BraganÃ§a page's so, this terminal license is MIT and also you can edit and use it too =)\n\nI'm a Deep Learning Engineering (Newcomer) and Planning and project control specialist.\nIf you want to use this terminal, you just need to execute 'help'. In addition, you can use more user-friendly blue sidenavigation on the left of the screen.\nIn order to skip text rolling, double click/touch anywhere.\n",
 
         internet_explorer_warning: isUserPT ? " " : "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: isUserPT ? " " : "welcome_message.txt",
@@ -73,7 +73,7 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {};
-    Singleton.defaultOptions[(isUserPT ? " " : "about.txt")] = isUserPT ? " " : "\nThis website was made using only pure JavaScript with no extra libraries.\n";
+    Singleton.defaultOptions[(isUserPT ? " " : "about.txt")] = isUserPT ? " " : "\nThis website was made using only pure JavaScript with no extra libraries. but very soon I will fix it :D\n";
     Singleton.defaultOptions[(isUserPT ? " " : "interests.txt")] = isUserPT ? " " : "\n+> My interests are mostly:\n- Python Programming :D\n- Machine Learning and Deep Learning Libraries in Python\n=> more than all, Natural Language Processing and Time Series or Sequential model\n- Microsoft Project\n- Microsoft Power BI and Excel\n- Tableau\n- COMFAR\n=> And I love to learn CEH, Cryptography, Open Source Society and Sociology. :)\n";
     Singleton.defaultOptions[(isUserPT ? " " : "academic_info.txt")] = isUserPT ? " " : "\n+> I got my bachelor's degree in industrial engineering in 2018. My expertise at that time in the field:\n- Planning and project control \n-  Economic feasibility of projects \n- Multiple criteria decision making\n\n+> In 2019, I entered the field of systems optimization at the master's level and I am still a student at this level. My field at this level is: \n- Time Series Forecasting\n - Machine Learning \n- Deep Learning \n- Natural Language Processing and I want to experience at the top level in this field \n";
     Singleton.defaultOptions["linkedin.txt"] = "https://www.linkedin.com/in/mkarimi21/";
