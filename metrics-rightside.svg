@@ -2,1402 +2,16 @@
     <defs>
         <style/>
     </defs>
-    <style>/* SVG global context */
-  svg {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-    font-size: 14px;
-    color: #777777;
-  }
-
-/* Large SVG context */
-  svg.large .largeable {
-    width: 474px;
-  }
-  svg.large .largeable &gt; .row {
-    width: 100%;
-  }
-  svg.large .largeable-align-start {
-    align-items: flex-start;
-  }
-  svg.large .column.largeable, svg.large .row.largeable, svg.large .largeable-inline-flex {
-    display: inline-flex;
-  }
-  svg.large .largeable-flex-wrap, svg.large .largeable-column-fields {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  svg.large .largeable-column-fields &gt; .field {
-    width: 230px;
-  }
-  svg.large .chart.largeable {
-    width: 458px;
-  }
-  svg.large .largeable-width-auto {
-    width: auto;
-  }
-  svg.large .largeable-width-half {
-    width: 50%;
-  }
-
-/* Columns display */
-  svg.columns .items-wrapper{
-    column-count: 2;
-    column-gap: 10px;
-  }
-  svg.columns .items-wrapper&gt;*{
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid-column;
-  }
-
-  @media (max-width: 850px){
-    svg.columns .items-wrapper{
-      column-count: 1;
-    }
-  }
-
-/* Headers */
-  h1, h2, h3 {
-    margin: 8px 0 2px;
-    padding: 0;
-    color: #0366d6;
-    font-weight: normal;
-  }
-  h1 svg, h2 svg, h3 svg {
-    fill: currentColor;
-  }
-  h1 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 16px;
-  }
-  h3 {
-    font-size: 14px;
-  }
-  .h-details {
-    margin: 0 4px;
-    padding-top: 4px;
-    font-size: 0.8rem;
-  }
-
-/* Fields */
-  section &gt; .field {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .field {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2px;
-    white-space: nowrap;
-  }
-  .field.wrap {
-    flex-wrap: wrap;
-  }
-  .field svg {
-    margin: 0 8px;
-    fill: #959da5;
-    flex-shrink: 0;
-  }
-  .field.error {
-    color: #cb2431;
-  }
-  .field.error svg {
-    fill: #cb2431;
-  }
-
-/* Displays */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .row section {
-    flex: 1 1 0;
-  }
-  .column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .center {
-    justify-content: center;
-  }
-  .horizontal {
-    justify-content: space-around;
-  }
-  .horizontal-wrap {
-    flex-wrap: wrap;
-  }
-  .horizontal .field {
-    flex: 1 1 0;
-  }
-  .no-wrap {
-    white-space: nowrap;
-  }
-  .fill-width {
-    width: 100%;
-  }
-  .margin-bottom {
-    margin-bottom: 16px;
-  }
-  .no-margin-top {
-    margin-top: 0px;
-  }
-
-/* User avatar */
-  .avatar {
-    border-radius: 50%;
-    margin: 0 6px;
-  }
-
-  .organization.avatar {
-    border-radius: 15%;
-  }
-
-  .organization.name {
-    white-space: nowrap;
-  }
-
-  .organization.contributions {
-    margin: 0 8px;
-    flex-wrap: wrap;
-  }
-
-  .contribution.organization {
-    display: flex;
-    border: 1px solid #959da5;
-    border-radius: 6px;
-    padding: 2px 6px;
-    padding-left: 0;
-    margin: 2px;
-    font-size: 12px;
-    background-color: #959da520;
-  }
-  .contribution.organization.s {
-    color: #EB355E;
-    background-color: #EB355E26;
-    border-color: #EB355E;
-  }
-  .contribution.organization.a {
-    color: #D79533;
-    background-color: #E7BD6926;
-    border-color: #E7BD69;
-  }
-  .contribution.organization.b {
-    color: #9D8FFF;
-    background-color: #9E91FF26;
-    border-color: #9E91FF;
-  }
-  .contribution.organization.c {
-    color: #58A6FF;
-    background-color: #58A6FF26;
-    border-color: #58A6FF;
-  }
-  .contribution .gauge-base, .contribution .gauge-arc {
-    stroke: currentColor;
-    stroke-width: 4;
-  }
-  .contribution .gauge text {
-    fill: currentColor;
-    font-size: 12px;
-    font-size: 15px;
-    letter-spacing: -2px;
-  }
-  .contribution .gauge {
-    margin: 0 4px;
-    color: inherit;
-  }
-  .contribution .commits-icon {
-    fill: currentColor;
-    width: 10px;
-    height: 10px;
-    margin-left: -9px;
-    margin-top: 8px;
-    color: inherit;
-    filter: brightness(.5);
-  }
-  .contribution.s .side {
-    background-color: #EB355E26;
-  }
-  .contribution.a .side {
-    background-color: #E7BD6926;
-  }
-  .contribution.b .side {
-    background-color: #9E91FF26;
-  }
-  .contribution.c .side {
-    background-color: #58A6FF26;
-  }
-
-  .contribution.organization .avatar {
-    margin: 0 4px;
-  }
-
-/* Commit calendar */
-  .calendar.field {
-    margin: 4px 0;
-    margin-left: 7px;
-  }
-  .calendar .day {
-    outline: 1px solid rgba(27,31,35,.04);
-    outline-offset: -1px;
-  }
-
-/* Progress bars */
-  svg.bar {
-    margin: 4px 0;
-  }
-
-/* Language */
-  .field.language {
-    margin: 0 8px;
-    flex-grow: 0;
-  }
-
-  .field.language.details {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .field.language.details small {
-    display: flex;
-    justify-content: space-between;
-    color: #666666;
-    text-align: right;
-  }
-
-  .field.language.details &gt; *, .field.language.details small &gt; * {
-    flex: 1 1 0;
-  }
-  .field.language.details small &gt; *:not(:last-child) {
-    margin-right: 6px;
-  }
-
-/* Follow-up */
-  .followup.legend {
-    font-size: 12px;
-    flex-wrap: wrap;
-  }
-  .followup.legend .field {
-    width: 46%;
-    justify-content: flex-start;
-    margin-left: 8px;
-  }
-  .followup.legend svg {
-    margin: 0 3px;
-    width: 14px;
-    height: 14px;
-  }
-  .followup.legend svg:first-child {
-    margin-left: 0;
-  }
-  .followup.legend svg:last-child {
-    margin-right: 0;
-  }
-  .followup-title{
-    white-space: initial;
-  }
-
-/* Labels */
-  .label {
-    background-color: #58A6FF30;
-    color: #0366D6;
-    padding: 0 10px;
-    font-weight: 500;
-    line-height: 22px;
-    margin: 2px 5px;
-    white-space: nowrap;
-    border-radius: 32px;
-    font-size: 12px;
-  }
-  .label.label-flex {
-    display: flex;
-  }
-  .label .label-right {
-    display: flex;
-    align-items: center;
-    font-size: .7rem;
-    margin-left: 6px;
-    margin-right: -10px;
-    background-color: #58A6FF10;
-    padding: 0 7px;
-    border-top-right-radius: 32px;
-    border-bottom-right-radius: 32px;
-  }
-  .label .twemoji {
-    margin-top: .25em;
-    margin-left: 0px;
-  }
-
-/* Habits */
-  .habits {
-    margin: 0;
-    list-style-type: none;
-    padding-left: 37px;
-  }
-
-/* Footer */
-  footer {
-    margin-top: 8px;
-    font-size: 10px;
-    font-style: italic;
-    color: #666666;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 4px;
-  }
-
-/* Speed test categories */
-  .categories {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 4px;
-  }
-  .category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 0;
-  }
-
-/* Gauges */
-  .gauge {
-    stroke-linecap: round;
-    fill: none;
-  }
-  .gauge.high {
-    color: #18b663;
-  }
-  .gauge.average {
-    color: #fb8c00;
-  }
-  .gauge.low {
-    color: #e53935;
-  }
-  .gauge.info {
-    color: #58A6FF;
-  }
-  .gauge-base, .gauge-arc {
-    stroke: currentColor;
-    stroke-width: 10;
-  }
-  .gauge-base {
-    stroke-opacity: .2;
-  }
-  .gauge-arc {
-    fill: none;
-    stroke-dashoffset: 0;
-    animation-delay: 250ms;
-    animation: animation-gauge 1s ease forwards
-  }
-  .gauge text {
-    fill: currentColor;
-    font-size: 40px;
-    font-family: monospace;
-    text-anchor: middle;
-    font-weight: 600;
-  }
-  .gauge .title {
-    font-size: 18px;
-    color: #777777;
-  }
-  @keyframes animation-gauge {
-    from {
-      stroke-dasharray: 0 329;
-    }
-  }
-  .audits {
-    margin-top: 8px;
-  }
-  .audit.text {
-    min-width: 42px;
-  }
-  .audit svg {
-    margin: 0;
-  }
-  .audit.high {
-    fill: #18b663;
-  }
-  .audit.average {
-    fill: #fb8c00;
-  }
-  .audit.low {
-    fill: #e53935;
-  }
-
-  .screenshot {
-    width: 452px;
-    height: 315px;
-    margin: 8px 14px 4px;
-    border-radius: 5px;
-  }
-
-  svg.large .audits {
-    display: inline-flex;
-    width: 474px;
-  }
-  svg.large .audits section:last-child &gt; .field {
-    justify-content: right;
-  }
-  svg.large .screenshot {
-    width: 904px;
-    height: 630px;
-  }
-
-/* Music plugin */
-  .tracklist {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 28px;
-    margin-top: 4px;
-    width: 100%;
-  }
-  .track {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4px;
-  }
-  .track img {
-    margin: 0 10px;
-    border-radius: 7px;
-    flex-shrink: 0;
-  }
-  .track .name {
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 600;
-  }
-  .track .artist, .track .played-at {
-    font-size: 12px;
-    color: #666666;
-  }
-  .track .infos {
-    flex-grow: 1;
-  }
-  svg.large .tracklist {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  svg.large .track {
-    width: 25%;
-  }
-
-/* Posts plugin */
-  .post {
-    align-items: flex-start;
-  }
-  .post .infos {
-    display: flex;
-    margin-bottom: 4px;
-  }
-  .post .infos .left {
-    flex-shrink: 0;
-    font-size: 12px;
-    color: #666666;
-    width: 72px;
-    padding-top: 1px;
-    text-align: center;
-  }
-  .post .infos .cover {
-    width: 100%;
-    height: 56px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 6px;
-    overflow: hidden;
-  }
-  .post .infos .right {
-    width: 376px;
-    padding-left: 4px;
-  }
-  .post .infos .title, .post .infos .description {
-    font-size: 14px;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 38px;
-    /* May not work in all browsers */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-  .post .infos .description {
-    margin-top: 3px;
-    font-size: 12px;
-    max-height: 48px;
-    color: #666666;
-    -webkit-line-clamp: 3;
-  }
-
-/* Topics */
-  .topics {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .topics img {
-    border-radius: 5px;
-    margin: 4px;
-  }
-
-/* Tweets */
-  .tweet {
-    font-size: 13px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    margin-left: 18px;
-    border-left: 3px solid #777777B2;
-    padding-left: 6px;
-  }
-
-  .tweet .mention, .tweet .link, .tweet .hashtag {
-    color: #0366d6;
-  }
-
-  .tweet .date {
-    margin: 6px 0;
-    font-size: 12px;
-    color: #666666;
-  }
-
-  .tweet .attachments {
-    display: flex;
-    width: 450px;
-    margin-top: 8px;
-  }
-
-  .tweet .attachments &gt; div {
-    flex: 1 1 0;
-    width: 0;
-    border-radius: 6px;
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    margin: 2px;
-    box-shadow: 0px 0px 1px #777777A0;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .tweet .attachments .infos {
-    background-color: #000000D0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 4px;
-  }
-
-  .tweet .attachments .infos &gt; div {
-    margin: 4px 8px 0;
-  }
-
-  .tweet .attachments .infos .title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .tweet .attachments .infos .description {
-    font-size: 11px;
-    color: #666666;
-  }
-
-/* Charts and graphs */
-  .chart {
-    padding: 0 8px;
-  }
-
-  .chart-bars {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-    margin: 8px 0 4px;
-    flex-grow: 1;
-    min-height: 70px;
-  }
-
-  .chart-bars .entry {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 10px;
-    color: #666666;
-  }
-
-  .chart-bars .entry .value {
-    font-size: 7px;
-  }
-
-  .chart-bars .entry .empty {
-    width: 100%;
-    text-align: center;
-  }
-
-  .chart-bars .bar {
-    width: 7px;
-    background-color: var(--color-calendar-graph-day-bg);
-    border: 1px solid var(--color-calendar-graph-day-border);
-    border-radius: 5px;
-  }
-
-  .chart-bars.horizontal {
-    flex-direction: column;
-    height: 100%;
-  }
-
-  .chart-bars.horizontal .entry {
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    min-height: 1rem;
-  }
-
-  .chart-bars.horizontal .entry .name {
-    flex-shrink: 0;
-    text-align: right;
-    width: 34%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .chart-bars .entry .bottom {
-    margin-bottom: -1rem;
-    line-height: 1rem;
-  }
-
-  .chart-bars.horizontal .bar {
-    height: 7px;
-    width: auto;
-    margin: 0 6px;
-  }
-
-/* Repository */
-  .repository {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 6px 0;
-  }
-
-  .repository .name {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 440px;
-  }
-
-  .repository .name span:first-child {
-    color: #58a6ff;
-  }
-
-  .repository .name span:last-child {
-    color: #666666;
-    font-size: 10px;
-  }
-
-  .repository .description {
-    display: block;
-    width: 440px;
-    white-space: normal;
-  }
-
-  .repository .description, .repository .infos {
-    color: #666666;
-    margin-left: 38px;
-    font-size: 13px;
-  }
-
-  .repository .infos &gt; div {
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
-  }
-
-  .repository .infos svg {
-    margin: 0;
-    margin-right: 4px;
-  }
-
-/* Activity */
-  .activity {
-    margin-bottom: 12px;
-  }
-
-  .activity .field {
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 450px;
-    white-space: nowrap;
-    margin-bottom: 0;
-  }
-
-  .activity .field .content {
-    flex-grow: 1;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-
-  .activity .repo, .activity .issue, .activity .commit .sha {
-    display: inline;
-    color: #58a6ff;
-  }
-
-  .activity .code {
-    background-color: #7777771F;
-    padding: 1px 5px;
-    font-size: 80%;
-    border-radius: 6px;
-    color: #777777;
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    margin: 0 4px -3px;
-  }
-
-  .activity .bold, .activity .user {
-    font-weight: 600;
-  }
-
-  .activity .details, .activity .timestamp {
-    padding-left: 38px;
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-    color: #666666;
-  }
-
-  .activity .timestamp {
-    font-size: 10px;
-    margin-top: 4px;
-  }
-
-  .activity .commit .sha {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  }
-
-  .activity .commit .message {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 360px;
-    white-space: nowrap;
-  }
-
-  .activity .details &gt; .comment {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-    width: 420px;
-    margin-top: 6px;
-    border-left: 3px solid #777777B2;
-    padding-left: 6px;
-    /* May not work in all browsers */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
-  svg.large .activity .field {
-    max-width: 900px;
-  }
-
-/* People */
-  .people {
-    padding: 0 10px;
-  }
-
-  .people .avatar {
-    margin: 0 2px;
-  }
-
-/* Projects */
-  .project .description {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-    width: 420px;
-    margin-left: 37px;
-    max-height: 38px;
-    font-size: 12px;
-    white-space: normal;
-    /* May not work in all browsers */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
-/* Anilist */
-  .anilist {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 28px;
-    margin-top: 4px;
-  }
-
-  .anilist .media {
-    display: flex;
-    margin-bottom: 4px;
-    width: 450px;
-  }
-  .anilist .media img {
-    margin: 0 10px;
-    border-radius: 7px;
-  }
-
-  .anilist .media .about {
-    flex-grow: 1;
-  }
-  .anilist .media .name {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 14px;
-    color: #58a6ff;
-  }
-  .anilist .media .infos {
-    font-size: 12px;
-    color: #666666;
-  }
-  .anilist .media .infos &gt; div {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 16px;
-  }
-  .anilist .media .infos svg {
-    fill: currentColor;
-    height: 12px;
-    width: 12px;
-    margin: 0;
-    margin-right: 4px;
-  }
-
-  .anilist .media .description {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-    width: 380px;
-    max-height: 38px;
-    font-size: 12px;
-    white-space: normal;
-    /* May not work in all browsers */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
-  .anilist .characters {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .anilist .characters img {
-    margin: 2px;
-    border-radius: 7px;
-  }
-
-/* Licenses */
-  .licenses {
-    display: flex;
-  }
-  .licenses .column {
-    align-items: flex-start;
-    font-size: 12px;
-    color: #666666;
-    flex-shrink: 0;
-  }
-  .licenses-details {
-    margin-top: 8px;
-  }
-  .field.license.details {
-    display: flex;
-    justify-content: space-between;
-  }
-  .field.license.details small {
-    display: flex;
-    justify-content: space-between;
-    color: #666666;
-    text-align: right;
-  }
-  .licenses .column:nth-child(1) {
-    margin-left: 13px;
-    width: 25%;
-  }
-  .licenses .column:nth-child(2) {
-    width: 25%;
-  }
-  .licenses .column:nth-child(3) {
-    width: 50%;
-  }
-  .licenses .column svg {
-    height: 12px;
-    width: 12px;
-  }
-  .licenses .column .title {
-    font-weight: 600;
-    margin-left: 15px;
-  }
-  .licenses .column .permission svg {
-    fill: #56d364;
-  }
-  .licenses .column .limitation svg {
-    fill: #f85149;
-  }
-  .licenses .column .condition svg {
-    fill: #58a6ff;
-  }
-
-/* Contributors */
-  .contributors {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 6px;
-  }
-  .contributors .label {
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-  }
-  .contributors .label img {
-    margin-left: 0;
-  }
-  .contributors .contributions {
-    display: flex;
-    align-items: center;
-    font-size: .7rem;
-    margin-left: 6px;
-    margin-right: -10px;
-    background-color: #58A6FF10;
-    padding: 0 7px;
-    border-top-right-radius: 32px;
-    border-bottom-right-radius: 32px;
-  }
-  .contributors .contributions svg {
-    fill: #0366D6;
-    margin-left: 4px;
-    width: .8rem;
-    height: .8rem;
-  }
-  .field.contributors-category {
-    margin-left: 12px;
-  }
-  .contributors-categories img {
-    margin-right: 0;
-  }
-
-/* Introduction and sponsors */
-  .introduction, .sponsors {
-    white-space: normal;
-    margin: 0 13px 2px;
-  }
-  .sponsors.goal {
-    padding: 6px 8px;
-    border-radius: 5px;
-    background-color: #7777771F;
-  }
-  .sponsors .goal-text {
-    display: flex;
-    justify-content: space-between;
-    font-style: italic;
-    font-size: 10px;
-    margin-bottom: 4px;
-  }
-  .sponsors .avatar {
-    margin: 2px;
-  }
-
-/* Stackoverflow */
-  .stackoverflow {
-    margin-left: 38px;
-  }
-  .stackoverflow .entry {
-    margin: 4px 0 12px;
-  }
-  .stackoverflow .title {
-    color: #58a6ff;
-    white-space: normal;
-    align-items: flex-start;
-  }
-  .stackoverflow .body, .stackoverflow .infos {
-    color: #666666;
-    font-size: 13px;
-    margin-left: 32px;
-  }
-  .stackoverflow .infos {
-    display: flex;
-    align-items: center;
-  }
-  .stackoverflow .infos &gt; div {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 16px;
-  }
-  .stackoverflow .infos svg {
-    fill: currentColor;
-    height: 12px;
-    width: 12px;
-    margin: 0;
-    margin-right: 4px;
-    flex-shrink: 0;
-  }
-  .stackoverflow .body {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border-left: 3px solid #777777B2;
-    padding-left: 6px;
-    width: 400px;
-  }
-
-/* Achievements */
-  .achievement {
-    display: flex;
-    margin: 4px 0;
-  }
-  .achievement .icon {
-    margin: 0 4px;
-    width: 44px;
-    height: 44px;
-  }
-  .achievement .text {
-    font-size: 12px;
-    color: #666666;
-  }
-  .achievement .unlock {
-    font-size: 9px;
-    color: #666666;
-  }
-  .achievement .title {
-    font-size: 14px;
-    color: #58A6FF;
-  }
-  .achievement .gauge.info {
-    color: #58A6FF;
-  }
-  .achievement .value {
-    background-color: #58A6FF26;
-  }
-  .achievement.x .title {
-    color: #666666;
-  }
-  .achievement.x .gauge.info {
-    color: #B0B0B0;
-  }
-  .achievement.x .value {
-    background-color: #B0B0B026;
-  }
-  .achievement.b .title {
-    color: #9D8FFF;
-  }
-  .achievement.b .gauge.info {
-    color: #9E91FF;
-  }
-  .achievement.b .value {
-    background-color: #9E91FF26;
-  }
-  .achievement.a .title {
-    color: #D79533;
-  }
-  .achievement.a .gauge.info {
-    color: #E7BD69;
-  }
-  .achievement.a .value {
-    background-color: #E7BD6926;
-  }
-  .achievement.s .title {
-    color: #EB355E;
-  }
-  .achievement.s .gauge.info {
-    color: #EB355E;
-  }
-  .achievement.s .value {
-    background-color: #EB355E26;
-  }
-  .achievement.secret .title{
-    color: #FF76CD;
-  }
-  .achievement.secret .gauge.info {
-    color: #FF79D1;
-  }
-  .achievement.secret .value {
-    background-color: #FF79D126;
-  }
-  .achievement .gh, .achievement .value {
-    border: 1px solid currentColor;
-    border-radius: 16px;
-    font-size: 10px;
-    padding: 0 5px;
-    white-space: nowrap;
-  }
-  .achievement .gauge-base, .achievement .gauge-arc {
-    stroke-width: 6;
-  }
-  .achievement .value-wrapper {
-    margin-bottom: -50px;
-    margin-top: 36px;
-    display: none;
-    position: relative;
-  }
-  .achievement .value {
-    margin-left: 46px;
-  }
-  .achievements.compact {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .achievements.compact .achievement {
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 80px;
-  }
-  .achievements.compact .info {
-    width: 100%;
-  }
-  .achievements.compact .achievement .title {
-    margin-bottom: 2px;
-    text-transform: capitalize;
-    text-align: center;
-  }
-  .achievements.compact .achievement .title .prefix {
-    min-height: 13px;
-    font-size: 10px;
-    display: block;
-    margin-bottom: -.25rem;
-  }
-  .achievements.compact .achievement .value-wrapper {
-    display: flex;
-  }
-  .achievements.compact .achievement .text, .achievements.compact .achievement .gh {
-    display: none;
-  }
-
-/* RSS feed */
-  .rss {
-    align-items: flex-start;
-  }
-  .rss .infos {
-    margin-bottom: 3px;
-  }
-  .rss .infos .date {
-    font-size: 10px;
-    color: #666666;
-  }
-
-/* Skyline */
-  .skyline-animation {
-    margin: 2px 13px 6px;
-    border-radius: 10px;
-    background-color: #030D21;
-    overflow: hidden;
-  }
-
-/* Code snippet */
-  .snippet .body {
-    padding-left: 12px;
-  }
-  .snippet.additions {
-    color: #336543;
-  }
-  .snippet.deletions {
-    color: #9A5256;
-  }
-
-/* Markdown and syntax highlighting */
-  .markdown b, .markdown i {
-    display: inline-block;
-    width: 97%;
-  }
-  .markdown p {
-    margin: 8px 0;
-  }
-  .markdown ul {
-    padding-left: 24px;
-  }
-  .markdown a {
-    color: #58a6ff;
-    text-decoration: none;
-  }
-  .markdown blockquote {
-    border-left: 4px solid #7777771F;
-    color: #777777;
-    margin: 0;
-    padding-left: 16px;
-  }
-  code {
-    background-color: #7777771F;
-    display: inline-block;
-    border-radius: 6px;
-    color: #777777;
-    padding: 1px 5px;
-    font-size: 80%;
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  }
-  code[class^=language-] {
-    white-space: pre-wrap;
-    width: 97%;
-    margin-top: 4px;
-  }
-  span.code {
-    background-color: #7777771F;
-    padding: 1px 5px;
-    font-size: 80%;
-    border-radius: 6px;
-    color: #777777;
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    margin: 0 4px -3px;
-  }
-  .token.comment {
-    color: #669900;
-  }
-  .token.punctuation {
-    color: #8a93a8;
-  }
-  .token.namespace, .token.constant, .token.symbol, .token.keyword {
-    color: #b44418;
-  }
-  .token.regex, .token.string, .token.char, .token.number, .token.boolean {
-    color: #2777AA;
-  }
-  .token.property, .token.tag {
-    color: #48428a;
-  }
-  .token.builtin, .token.operator {
-    color: #106cbc;
-  }
-  .token.trimmed {
-    font-style: italic;
-    color: #77777760;
-  }
-  .token.coord {
-    color: #D2A8FF;
-    font-weight: bold;
-  }
-  .token.inserted:not(.prefix) {
-    color: #AAD0B4DC;
-    background-color: #336543DC;
-  }
-  .token.deleted:not(.prefix) {
-    color: #EED2D0DC;
-    background-color: #9A5256DC;
-  }
-
-/* Typography */
-  .space {
-    margin-left: 7px;
-  }
-  .blue {
-    color: #58a6ff;
-  }
-
-/* Charts */
-  .ct-line {
-    stroke-width: 2px !important;
-    stroke: #58A6FF !important;
-  }
-  .ct-area {
-    fill: #58A6FF !important;
-  }
-  .ct-label {
-    fill: rgba(127, 127, 127, 0.8) !important;
-    color: rgba(127, 127, 127, 0.8) !important;
-  }
-  .ct-grid {
-    stroke: rgba(127, 127, 127, 0.4) !important;
-  }
-
-/* Autosize */
-  .autosize {
-    width: auto;
-    height: auto;
-  }
-
-/* Fade animation */
-  .af {
-    opacity: 0;
-    animation: animation-fade 1s ease forwards;
-  }
-  @keyframes animation-fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-/* Twemoji and GitHub emoji */
-  .twemoji, .gemoji {
-    height: 1em;
-    width: 1em;
-    margin-bottom: -.125em;
-  }
-
-/* Cake day */
-  .cakeday, .cakeday svg {
-    animation: animation-rainbow 1.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(1);
-  }
-
-/* Rainbow animation */
-  @keyframes animation-rainbow {
-    0%, 100%{ color: #7F00FF; fill: #7F00FF; }
-    14% { color: #A933FF; fill: #A933FF; }
-    29%{ color: #007FFF; fill: #007FFF; }
-    43%{ color: #00FF7F; fill: #00FF7F; }
-		57%{ color: #FFFF00; fill: #FFFF00; }
-		71%{ color: #FF7F00; fill: #FF7F00; }
-		86%{ color: #FF0000; fill: #FF0000; }
-  }
-
-/* Calendar */
-  :root {
-    --color-calendar-graph-day-bg: #ebedf0;
-    --color-calendar-graph-day-border: rgba(27,31,35,0.06);
-    --color-calendar-graph-day-L1-bg: #9be9a8;
-    --color-calendar-graph-day-L2-bg: #40c463;
-    --color-calendar-graph-day-L3-bg: #30a14e;
-    --color-calendar-graph-day-L4-bg: #216e39;
-    --color-calendar-halloween-graph-day-L1-bg: #ffee4a;
-    --color-calendar-halloween-graph-day-L2-bg: #ffc501;
-    --color-calendar-halloween-graph-day-L3-bg: #fe9600;
-    --color-calendar-halloween-graph-day-L4-bg: #03001c;
-    --color-calendar-graph-day-L4-border: rgba(27,31,35,0.06);
-    --color-calendar-graph-day-L3-border: rgba(27,31,35,0.06);
-    --color-calendar-graph-day-L2-border: rgba(27,31,35,0.06);
-    --color-calendar-graph-day-L1-border: rgba(27,31,35,0.06);
-  }
-
-/* End delimiter */
-  #metrics-end {
-    width: 100%;
-  }
-
-  .no-animations * {
-    transition-delay: 0s !important;
-    transition-duration: 0s !important;
-    animation-delay: -0.0001s !important;
-    animation-duration: 0s !important;
-    animation-play-state: paused !important;
-    caret-color: transparent !important;
-  }</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;color:#777}h2,h3{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400}.gauge text,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3,svg{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.avatar{border-radius:50%;margin:0 6px}.organization.avatar{border-radius:15%}.organization.name{white-space:nowrap}.organization.contributions{margin:0 8px;flex-wrap:wrap}.contribution.organization{display:flex;border:1px solid#959da5;border-radius:6px;padding:2px 6px 2px 0;margin:2px;font-size:12px;background-color:#959da520}.contribution.organization.s{color:#eb355e;background-color:#eb355e26;border-color:#eb355e}.contribution.organization.a{color:#d79533;background-color:#e7bd6926;border-color:#e7bd69}.contribution.organization.b{color:#9d8fff;background-color:#9e91ff26;border-color:#9e91ff}.contribution.organization.c{color:#58a6ff;background-color:#58a6ff26;border-color:#58a6ff}.contribution .gauge-arc,.contribution .gauge-base{stroke:currentColor;stroke-width:4}.contribution .gauge text{fill:currentColor;font-size:15px;letter-spacing:-2px}.contribution .gauge{margin:0 4px;color:inherit}.contribution.organization .avatar{margin:0 4px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.gauge{stroke-linecap:round;fill:none}.achievement .gauge.info,.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.repository{display:flex;flex-direction:column;width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .value{background-color:#58a6ff26}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.x .value{background-color:#b0b0b026}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.b .value{background-color:#9e91ff26}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.a .value{background-color:#e7bd6926}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement.s .value{background-color:#eb355e26}.achievement.secret .title{color:#ff76cd}.achievement.secret .gauge.info{color:#ff79d1}.achievement.secret .value{background-color:#ff79d126}.achievement .gh,.achievement .value{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}.achievement .value-wrapper{margin-bottom:-50px;margin-top:36px;display:none;position:relative}.achievement .value{margin-left:46px}.achievements.compact{display:flex;flex-wrap:wrap}.achievements.compact .achievement{flex-direction:column-reverse;align-items:center;width:80px}#metrics-end,.achievements.compact .info{width:100%}.achievements.compact .achievement .title{margin-bottom:2px;text-transform:capitalize;text-align:center}.achievements.compact .achievement .title .prefix{min-height:13px;font-size:10px;display:block;margin-bottom:-.25rem}.achievements.compact .achievement .value-wrapper{display:flex}.achievements.compact .achievement .gh,.achievements.compact .achievement .text{display:none}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
             <section>
                 <h2 class="field">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"/></svg>
-      Notable contributions
-    </h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"/>
+                    </svg>
+                    Notable contributions
+                </h2>
                 <div class="row organization contributions">
                     <div class="organization contribution  ">
                         <img class="organization avatar" src="data:image/png;base64,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" width="16" height="16" />
@@ -1411,33 +25,45 @@
             </section>
             <section>
                 <h2 class="field">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"/></svg>
-      Contributions calendar
-    </h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"/>
+                    </svg>
+                    Contributions calendar
+                </h2>
                 <div class="row">
                     <section>
                     </section>
                     <section>
                         <h3 class="field">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M7.75 14A1.75 1.75 0 016 12.25v-8.5C6 2.784 6.784 2 7.75 2h6.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0114.25 14h-6.5zm-.25-1.75c0 .138.112.25.25.25h6.5a.25.25 0 00.25-.25v-8.5a.25.25 0 00-.25-.25h-6.5a.25.25 0 00-.25.25v8.5zM4.9 3.508a.75.75 0 01-.274 1.025.25.25 0 00-.126.217v6.5a.25.25 0 00.126.217.75.75 0 01-.752 1.298A1.75 1.75 0 013 11.25v-6.5c0-.649.353-1.214.874-1.516a.75.75 0 011.025.274zM1.625 5.533a.75.75 0 10-.752-1.299A1.75 1.75 0 000 5.75v4.5c0 .649.353 1.214.874 1.515a.75.75 0 10.752-1.298.25.25 0 01-.126-.217v-4.5a.25.25 0 01.126-.217z"/></svg>
-            Commits streaks
-          </h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M7.75 14A1.75 1.75 0 016 12.25v-8.5C6 2.784 6.784 2 7.75 2h6.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0114.25 14h-6.5zm-.25-1.75c0 .138.112.25.25.25h6.5a.25.25 0 00.25-.25v-8.5a.25.25 0 00-.25-.25h-6.5a.25.25 0 00-.25.25v8.5zM4.9 3.508a.75.75 0 01-.274 1.025.25.25 0 00-.126.217v6.5a.25.25 0 00.126.217.75.75 0 01-.752 1.298A1.75 1.75 0 013 11.25v-6.5c0-.649.353-1.214.874-1.516a.75.75 0 011.025.274zM1.625 5.533a.75.75 0 10-.752-1.299A1.75 1.75 0 000 5.75v4.5c0 .649.353 1.214.874 1.515a.75.75 0 10.752-1.298.25.25 0 01-.126-.217v-4.5a.25.25 0 01.126-.217z"/>
+                            </svg>
+                            Commits streaks
+                        </h3>
                         <div class="field">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/></svg>
-            Best streak 8 days
-          </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/>
+                            </svg>
+                            Best streak 8 days
+                        </div>
                         <h3 class="field">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/></svg>
-            Commits per day
-          </h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                            </svg>
+                            Commits per day
+                        </h3>
                         <div class="field">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M7.823 1.677L4.927 4.573A.25.25 0 005.104 5H7.25v3.236a.75.75 0 101.5 0V5h2.146a.25.25 0 00.177-.427L8.177 1.677a.25.25 0 00-.354 0zM13.75 11a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zm-3.75.75a.75.75 0 01.75-.75h.5a.75.75 0 010 1.5h-.5a.75.75 0 01-.75-.75zM7.75 11a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM4 11.75a.75.75 0 01.75-.75h.5a.75.75 0 010 1.5h-.5a.75.75 0 01-.75-.75zM1.75 11a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"/></svg>
-            Highest in a day at 92
-          </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path d="M7.823 1.677L4.927 4.573A.25.25 0 005.104 5H7.25v3.236a.75.75 0 101.5 0V5h2.146a.25.25 0 00.177-.427L8.177 1.677a.25.25 0 00-.354 0zM13.75 11a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zm-3.75.75a.75.75 0 01.75-.75h.5a.75.75 0 010 1.5h-.5a.75.75 0 01-.75-.75zM7.75 11a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM4 11.75a.75.75 0 01.75-.75h.5a.75.75 0 010 1.5h-.5a.75.75 0 01-.75-.75zM1.75 11a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"/>
+                            </svg>
+                            Highest in a day at 92
+                        </div>
                         <div class="field">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/></svg>
-            Average per day at ~0.69
-          </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/>
+                            </svg>
+                            Average per day at ~0.69
+                        </div>
                     </section>
                 </div>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="margin-top: -130px;" viewBox="0,0 480,170">
@@ -2445,9 +1071,11 @@
             </section>
             <section>
                 <h2 class="field">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/></svg>
-      Achievements
-    </h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/>
+                    </svg>
+                    Achievements
+                </h2>
                 <div class="row">
                     <section class="achievements compact largeable-flex-wrap">
                         <div class="achievement s largeable-width-half">
@@ -2460,7 +1088,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="106.02000000000001 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="106.22666666666667 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -2479,17 +1107,13 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix">Master</span> deployer
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        2026
-                      </div>
-                    </div>
-                  
-                </div>
-                                <div class="text">Repositories have been deployed 2026 times</div>
+                                    <span class="prefix">Master</span>
+                                    deployer
+                                    <div class="value-wrapper">
+                                        <div class="value">2028</div>
+                                    </div>
+                                </div>
+                                <div class="text">Repositories have been deployed 2028 times</div>
                             </div>
                         </div>
                         <div class="achievement a largeable-width-half">
@@ -2518,16 +1142,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix">Super</span> polyglot
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        10
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix">Super</span>
+                                    polyglot
+                                    <div class="value-wrapper">
+                                        <div class="value">10</div>
+                                    </div>
+                                </div>
                                 <div class="text">Using 10 different programming languages</div>
                             </div>
                         </div>
@@ -2564,16 +1184,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix">Super</span> forker
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        11
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix">Super</span>
+                                    forker
+                                    <div class="value-wrapper">
+                                        <div class="value">11</div>
+                                    </div>
+                                </div>
                                 <div class="text">Forked 11 public repositories</div>
                             </div>
                         </div>
@@ -2607,16 +1223,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix">Super</span> member
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        5
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix">Super</span>
+                                    member
+                                    <div class="value-wrapper">
+                                        <div class="value">5</div>
+                                    </div>
+                                </div>
                                 <div class="text">Registered 5 years ago</div>
                             </div>
                         </div>
@@ -2647,16 +1259,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix">Great</span> worker
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        3
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix">Great</span>
+                                    worker
+                                    <div class="value-wrapper">
+                                        <div class="value">3</div>
+                                    </div>
+                                </div>
                                 <div class="text">Joined 3 organizations</div>
                             </div>
                         </div>
@@ -2693,20 +1301,13 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix">Great</span> developer
-                  
-                    <span class="gh">
-                      ranked 1.46m out of 82m users
-                    </span>
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        23
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix">Great</span>
+                                    developer
+                                    <span class="gh">ranked 1.46m out of 82m users</span>
+                                    <div class="value-wrapper">
+                                        <div class="value">23</div>
+                                    </div>
+                                </div>
                                 <div class="text">Published 23 public repositories</div>
                             </div>
                         </div>
@@ -2735,16 +1336,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Follower
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        40
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Follower
+                                    <div class="value-wrapper">
+                                        <div class="value">40</div>
+                                    </div>
+                                </div>
                                 <div class="text">Following 40 users</div>
                             </div>
                         </div>
@@ -2774,16 +1371,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Stargazer
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        17
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Stargazer
+                                    <div class="value-wrapper">
+                                        <div class="value">17</div>
+                                    </div>
+                                </div>
                                 <div class="text">Starred 17 repositories</div>
                             </div>
                         </div>
@@ -2822,16 +1415,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Contributor
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        16
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Contributor
+                                    <div class="value-wrapper">
+                                        <div class="value">16</div>
+                                    </div>
+                                </div>
                                 <div class="text">Opened 16 pull requests</div>
                             </div>
                         </div>
@@ -2880,20 +1469,13 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Influencer
-                  
-                    <span class="gh">
-                      ranked 631k out of 82m users
-                    </span>
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        13
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Influencer
+                                    <span class="gh">ranked 631k out of 82m users</span>
+                                    <div class="value-wrapper">
+                                        <div class="value">13</div>
+                                    </div>
+                                </div>
                                 <div class="text">Followed by 13 users</div>
                             </div>
                         </div>
@@ -2926,16 +1508,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Gister
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        2
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Gister
+                                    <div class="value-wrapper">
+                                        <div class="value">2</div>
+                                    </div>
+                                </div>
                                 <div class="text">Published 2 gists</div>
                             </div>
                         </div>
@@ -2970,16 +1548,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Maintainer
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        2
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Maintainer
+                                    <div class="value-wrapper">
+                                        <div class="value">2</div>
+                                    </div>
+                                </div>
                                 <div class="text">Maintaining a repository with 2 stars</div>
                             </div>
                         </div>
@@ -3022,20 +1596,13 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Inspirer
-                  
-                    <span class="gh">
-                      ranked 3.82m out of 273m repositories
-                    </span>
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        1
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Inspirer
+                                    <span class="gh">ranked 3.82m out of 273m repositories</span>
+                                    <div class="value-wrapper">
+                                        <div class="value">1</div>
+                                    </div>
+                                </div>
                                 <div class="text">Maintaining or created a repository which has been forked 1 time</div>
                             </div>
                         </div>
@@ -3066,16 +1633,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Chatter
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        1
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Chatter
+                                    <div class="value-wrapper">
+                                        <div class="value">1</div>
+                                    </div>
+                                </div>
                                 <div class="text">Participated in discussions 1 time</div>
                             </div>
                         </div>
@@ -3115,16 +1678,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Automator
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        ☆
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Automator
+                                    <div class="value-wrapper">
+                                        <div class="value">☆</div>
+                                    </div>
+                                </div>
                                 <div class="text">Use GitHub Actions to automate profile updates</div>
                             </div>
                         </div>
@@ -3152,16 +1711,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Manager
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        0
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Manager
+                                    <div class="value-wrapper">
+                                        <div class="value">0</div>
+                                    </div>
+                                </div>
                                 <div class="text">Created 0 user projects</div>
                             </div>
                         </div>
@@ -3199,16 +1754,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Reviewer
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        0
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Reviewer
+                                    <div class="value-wrapper">
+                                        <div class="value">0</div>
+                                    </div>
+                                </div>
                                 <div class="text">Reviewed 0 pull requests</div>
                             </div>
                         </div>
@@ -3238,16 +1789,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Packager
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        0
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Packager
+                                    <div class="value-wrapper">
+                                        <div class="value">0</div>
+                                    </div>
+                                </div>
                                 <div class="text">Created 0 packages</div>
                             </div>
                         </div>
@@ -3280,16 +1827,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Sponsor
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        0
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Sponsor
+                                    <div class="value-wrapper">
+                                        <div class="value">0</div>
+                                    </div>
+                                </div>
                                 <div class="text">Sponsoring 0 users or organizations</div>
                             </div>
                         </div>
@@ -3321,16 +1864,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Helper
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        0
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Helper
+                                    <div class="value-wrapper">
+                                        <div class="value">0</div>
+                                    </div>
+                                </div>
                                 <div class="text">Answered and solved 0 discussions</div>
                             </div>
                         </div>
@@ -3357,16 +1896,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Verified
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        ?
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Verified
+                                    <div class="value-wrapper">
+                                        <div class="value">?</div>
+                                    </div>
+                                </div>
                                 <div class="text">Registered a GPG key to sign commits</div>
                             </div>
                         </div>
@@ -3402,16 +1937,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Explorer
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        ?
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Explorer
+                                    <div class="value-wrapper">
+                                        <div class="value">?</div>
+                                    </div>
+                                </div>
                                 <div class="text">Starred a topic on GitHub Explore</div>
                             </div>
                         </div>
@@ -3444,16 +1975,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Infographile
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        ?
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Infographile
+                                    <div class="value-wrapper">
+                                        <div class="value">?</div>
+                                    </div>
+                                </div>
                                 <div class="text">Fervent supporter of metrics</div>
                             </div>
                         </div>
@@ -3497,16 +2024,12 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                  <span class="prefix"></span> Octonaut
-                  
-                  
-                    <div class="value-wrapper">
-                      <div class="value">
-                        ?
-                      </div>
-                    </div>
-                  
-                </div>
+                                    <span class="prefix"></span>
+                                    Octonaut
+                                    <div class="value-wrapper">
+                                        <div class="value">?</div>
+                                    </div>
+                                </div>
                                 <div class="text">Following octocat</div>
                             </div>
                         </div>
@@ -3515,7 +2038,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 5 Jan 2022, 21:43:12 (timezone Asia/Tehran) with lowlighter/metrics@3.16.0</span>
+                <span>Last updated 5 Jan 2022, 22:39:43 (timezone Asia/Tehran) with lowlighter/metrics@3.17.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
