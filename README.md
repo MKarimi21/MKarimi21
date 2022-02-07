@@ -26,9 +26,40 @@
   <br>
   And I love to learn CEH, Cryptography, Open Source Society and Sociology. 🙂
 
-
 </p>
 
+<br>
+
+<div align="center">
+<b>💪🏻 Programming Language & Frameworks that I am working on it till to expert on it </b>
+<br> <br>
+  <img title="Python" alt="Python" src="SVG/python.svg" width="40" height="40" /> 
+  <img title="Pytorch" alt="Pytorch" src="SVG/pytorch.svg" width="40" height="40" /> 
+  <img title="SKlearn" alt="SKlearn" src="SVG/sklearn.svg" width="40" height="40" />
+  <img title="Pandas" alt="Pandas" src="SVG/Pandas.svg" width="40" height="40" /> 
+  <img title="Numpy" alt="Numpy" src="SVG/numpy.svg" width="40" height="40" /> 
+  <img title="Matplotlib" alt="Matplotlib" src="SVG/Matplotlib.svg" width="40" height="40" /> 
+<br><br>
+  <img title="Dart" alt="Dart" src="SVG/dart.svg" width="40" height="40" />
+  <img title="Flutter" alt="Flutter" src="SVG/flutter.svg" width="40" height="40" />
+  <img title="Docker" alt="Docker" src="SVG/docker.svg" width="40" height="40" />
+  <img title="PostgreSQL" alt="PostgreSQL" src="SVG/postgresql.svg" width="40" height="40" />
+  <img title="MongoDB" alt="MongoDB" src="SVG/mongodb.svg" width="40" height="40" />
+  <img title="Git" alt="Git" src="SVG/git.svg" width="40" height="40" />
+  <img title="Figma" alt="Figma" src="SVG/figma.svg" width="40" height="40" />
+  <img title="Adobe XD" alt="Adobe XD" src="SVG/XD.svg" width="40" height="40" />
+  <img title="Adobe Ps" alt="Adobe Ps" src="SVG/photoshop.svg" width="40" height="40" />
+
+<br><br>
+<b>And also I'm working on my Industrial Engineering skills 🤟🏻</b>
+  
+  <img title="MS Project" alt="MS Project" src="SVG/microsoft-project.svg" width="40" height="40" />
+  <img title="Primavera P6" alt="Primavera P6" src="SVG/oracle.svg" width="40" height="40" />
+  
+</div>
+
+<br>
+  
   
 <a href="https://metrics.lecoq.io/about/mkarimi21"><img src="metrics-leftside.svg" align="left" width="47.5%"></img></a><a href="https://metrics.lecoq.io/about/mkarimi21"><img src="metrics-rightside.svg" align="right" width="47.5%"></img></a>
 
