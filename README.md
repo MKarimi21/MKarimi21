@@ -7,8 +7,11 @@
 
 <br>
 
-<pre align="center">
-  <a href="https://www.mkarimi21.ir/" target="blank"><img alt="Mostafa-Karimi" src='https://img.shields.io/badge/Mostafa-Karimi-14354C?style=for-the-badge&logoColor=white' /></a> , <a href="https://twitter.com/mkarimi21" target="blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-%230077B5.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a> , <a href="https://github.com/mkarimi21" target="blank"><img alt='GitHub' src='https://img.shields.io/badge/github-14354C?style=for-the-badge&logo=github&logoColor=white' /></a> , <a href="https://www.linkedin.com/in/mkarimi21" target="blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a> , <a href="https://www.t.me/mkarimi21" target="blank"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-14354C?&style=for-the-badge&logo=telegram&logoColor=white" /></a> , <a href="mailto:mkarimi21@hotmail.com" target="blank"><img alt="OutLouk" src="https://img.shields.io/badge/Outlouk-%230077B5.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a></pre>
+<div align="center">
+  <a href="https://www.mkarimi21.ir/" target="blank"> <img title="My WebSite" alt="My Personal Website" src="SVG/earth.svg" width="40" height="40" /> </a>    <a href="https://github.com/mkarimi21" target="blank"> <img title="My Github page's" alt="My Github" src="SVG/github.svg" width="40" height="40" /> </a>    <a href="https://huggingface.co/mkarimi21" target="blank"> <img title="My HuggingFace page's" alt="My HuggingFace" src="SVG/huggingface.svg" width="40" height="40" /> </a> 
+    <a href="https://www.linkedin.com/in/mkarimi21" target="blank"> <img title="My LinkedIn page's" alt="My linkedIn" src="SVG/linkedin.svg" width="40" height="40" /> </a>  <a href="https://twitter.com/mkarimi21" target="blank"> <img title="My Twitter" alt="My Twitter" src="SVG/twitter.svg" width="40" height="40" /> </a>    <a href="mailto:mkarimi21@hotmail.com" target="blank"> <img title="My Email" alt="My Email" src="SVG/outlook.svg" width="40" height="40" /> </a>    <a href="https://www.t.me/mkarimi21" target="blank"> <img title="My Telegram" alt="My Telegram" src="SVG/telegram.svg" width="40" height="40" /> </a>
+ 
+</div>   
 
 <br>
 
