@@ -1093,7 +1093,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="278.48333333333335 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="278.79333333333335 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -1115,10 +1115,10 @@
                                     <span class="prefix">Master</span>
                                     deployer
                                     <div class="value-wrapper">
-                                        <div class="value">3695</div>
+                                        <div class="value">3698</div>
                                     </div>
                                 </div>
-                                <div class="text">Repositories have been deployed 3695 times</div>
+                                <div class="text">Repositories have been deployed 3698 times</div>
                             </div>
                         </div>
                         <div class="achievement a largeable-width-half">
@@ -1326,7 +1326,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="38.165829145728644 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="37.38693467336683 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g fill="none" fill-rule="evenodd">
@@ -1344,10 +1344,10 @@
                                     <span class="prefix"></span>
                                     Follower
                                     <div class="value-wrapper">
-                                        <div class="value">50</div>
+                                        <div class="value">49</div>
                                     </div>
                                 </div>
-                                <div class="text">Following 50 users</div>
+                                <div class="text">Following 49 users</div>
                             </div>
                         </div>
                         <div class="achievement c largeable-width-half">
@@ -2043,7 +2043,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 10 Feb 2022, 16:43:15 (timezone Asia/Tehran) with lowlighter/metrics@3.20.0</span>
+                <span>Last updated 10 Feb 2022, 17:44:11 (timezone Asia/Tehran) with lowlighter/metrics@3.20.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
