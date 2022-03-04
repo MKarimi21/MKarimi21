@@ -31,7 +31,7 @@
 <br>
 
 <div align="center">
-<b>💪🏻 Programming Language & Frameworks that I am working on it till to expert on it </b>
+<b>💪🏻 Programming Language & Frameworks that I am working on it till to expert on it, so maybe i need many time to fully expert in each one 😃 </b>
 <br> <br>
   <img title="Python" alt="Python" src="SVG/python.svg" width="40" height="40" /> 
   <img title="Pytorch" alt="Pytorch" src="SVG/pytorch.svg" width="40" height="40" /> 
