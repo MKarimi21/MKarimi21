@@ -39,16 +39,7 @@
   <img title="Pandas" alt="Pandas" src="SVG/Pandas.svg" width="40" height="40" /> 
   <img title="Numpy" alt="Numpy" src="SVG/numpy.svg" width="40" height="40" /> 
   <img title="Matplotlib" alt="Matplotlib" src="SVG/Matplotlib.svg" width="40" height="40" /> 
-<br><br>
-  <img title="Dart" alt="Dart" src="SVG/dart.svg" width="40" height="40" />
-  <img title="Flutter" alt="Flutter" src="SVG/flutter.svg" width="40" height="40" />
-  <img title="Docker" alt="Docker" src="SVG/docker.svg" width="40" height="40" />
-  <img title="PostgreSQL" alt="PostgreSQL" src="SVG/postgresql.svg" width="40" height="40" />
-  <img title="MongoDB" alt="MongoDB" src="SVG/mongodb.svg" width="40" height="40" />
-  <img title="Git" alt="Git" src="SVG/git.svg" width="40" height="40" />
-  <img title="Figma" alt="Figma" src="SVG/figma.svg" width="40" height="40" />
-  <img title="Adobe XD" alt="Adobe XD" src="SVG/XD.svg" width="40" height="40" />
-  <img title="Adobe Ps" alt="Adobe Ps" src="SVG/photoshop.svg" width="40" height="40" />
+<br>
 
 <br><br>
 <b>And also I'm working on my Industrial Engineering skills 🤟🏻</b>
