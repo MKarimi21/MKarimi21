@@ -20,7 +20,7 @@
 
 <p class="text-justify" align="left">
 
-  I am an MSc in systems optimization and my skill in the field of Machine Learning engineering and Planning and Project Control. I have recently entered Deep Learning engineering and I am interested in working professionally in this field and make business intelligence or etc.
+  I am an MSc in systems optimization and my skill in the field of Machine Learning engineering and Project Management & Control. I have recently entered AI/ML Product Management field and I am interested in working professionally in this field and growing many companies with my knowledge of product management and business intelligence and etc. 
   <br>
   I'm Skilled in Python, MS Power BI and Tableau, MS Project and Excel, and COMFAR.
   <br>
