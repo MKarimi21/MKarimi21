@@ -14,13 +14,13 @@ def start_command(update, context):
     Hello there! I\'m a Mostafa Karimi. How can I help you?\n
     Please use command 😄
 
-    Source-Code: [Github](github.com)
+    Source-Code: [Github](https://github.com/MKarimi21/MKarimi21/blob/master/TelegramBot/mkarimi21bot.py)
     \n\n
     سلام من مصطفی کریمی هستم. چه کمکی میتونم بهتون بکنم؟
     \n
     لطفا از دستورات زیر استفاده کنید 😄
     
-    سورس کد ربات: [Github](github.com)
+    سورس کد ربات: [Github](https://github.com/MKarimi21/MKarimi21/blob/master/TelegramBot/mkarimi21bot.py)
     ''', parse_mode=ParseMode.MARKDOWN)
 
 
