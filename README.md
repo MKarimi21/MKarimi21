@@ -20,9 +20,9 @@
 
 <p class="text-justify" align="left">
 
-  I am an MSc in systems optimization and my skill in the field of Machine Learning engineering and Project Management & Control. I have recently entered AI/ML Product Management field and I am interested in working professionally in this field and growing many companies with my knowledge of product management and business intelligence and etc. 
+  I have an MSc in industrial engineering with concentrations in machine learning, project planning and control, and systems optimization. I have recently been involved in the field of machine learning product management and I am highly eager to forge ahead in the mentioned field. I intend to maneuver my knowledge and skills in connection with product management, business intelligence, machine learning, etc., and collaborate with well-known and established teams of companies and organizations in an agile manner. This will provide an opportunity for me to develop and improve the product and to play an influential role in this area. 
   <br>
-  I'm Skilled in Python, Agile Methodology, MS Power BI and Tableau, MS Project and Excel, and COMFAR.
+  I'm Skilled in Python, Product Management, Agile Methodology, MS Power BI and Tableau, MS Project and Excel, and COMFAR.
   <br>
   And I love to learn CEH, Cryptography, Open Source Society and Sociology. 🙂
 
