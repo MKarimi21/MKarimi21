@@ -1089,7 +1089,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="2538.6933333333336 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="2538.8999999999996 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -1111,10 +1111,10 @@
                                     <span class="prefix">Master</span>
                                     deployer
                                     <div class="value-wrapper">
-                                        <div class="value">25568</div>
+                                        <div class="value">25570</div>
                                     </div>
                                 </div>
-                                <div class="text">Repositories have been deployed 25568 times</div>
+                                <div class="text">Repositories have been deployed 25570 times</div>
                             </div>
                         </div>
                         <div class="achievement a largeable-width-half">
@@ -1304,7 +1304,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Developer
-                                    <span class="gh">ranked 3.17m out of 118m users</span>
+                                    <span class="gh">ranked 3.27m out of 118m users</span>
                                     <div class="value-wrapper">
                                         <div class="value">16</div>
                                     </div>
@@ -1599,7 +1599,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 4.52m out of 408m repositories</span>
+                                    <span class="gh">ranked 4.41m out of 408m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">1</div>
                                     </div>
@@ -2039,7 +2039,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 15 Jun 2023, 11:40:02 (timezone Asia/Tehran) with lowlighter/metrics@3.33.0</span>
+                <span>Last updated 15 Jun 2023, 12:42:33 (timezone Asia/Tehran) with lowlighter/metrics@3.33.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
