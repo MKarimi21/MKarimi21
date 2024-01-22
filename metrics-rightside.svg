@@ -1074,7 +1074,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="3601.6833333333334 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="3601.89 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -1096,10 +1096,10 @@
                                     <span class="prefix">Master</span>
                                     deployer
                                     <div class="value-wrapper">
-                                        <div class="value">35855</div>
+                                        <div class="value">35857</div>
                                     </div>
                                 </div>
-                                <div class="text">Repositories have been deployed 35855 times</div>
+                                <div class="text">Repositories have been deployed 35857 times</div>
                             </div>
                         </div>
                         <div class="achievement a largeable-width-half">
@@ -1584,7 +1584,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 5.10m out of 58.3m repositories</span>
+                                    <span class="gh">ranked 4.87m out of 51.7m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">1</div>
                                     </div>
@@ -2024,7 +2024,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 22 Jan 2024, 21:43:35 (timezone Asia/Tehran) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 22 Jan 2024, 22:38:59 (timezone Asia/Tehran) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
