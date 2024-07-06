@@ -1062,7 +1062,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="4410.576666666667 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="4410.886666666667 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -1084,10 +1084,10 @@
                                     <span class="prefix">Master</span>
                                     deployer
                                     <div class="value-wrapper">
-                                        <div class="value">43683</div>
+                                        <div class="value">43686</div>
                                     </div>
                                 </div>
-                                <div class="text">Repositories have been deployed 43683 times</div>
+                                <div class="text">Repositories have been deployed 43686 times</div>
                             </div>
                         </div>
                         <div class="achievement a largeable-width-half">
@@ -1277,7 +1277,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Developer
-                                    <span class="gh">ranked 3.69m out of 131m users</span>
+                                    <span class="gh">ranked 3.69m out of 137m users</span>
                                     <div class="value-wrapper">
                                         <div class="value">17</div>
                                     </div>
@@ -1401,7 +1401,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Influencer
-                                    <span class="gh">ranked 277k out of 131m users</span>
+                                    <span class="gh">ranked 277k out of 137m users</span>
                                     <div class="value-wrapper">
                                         <div class="value">47</div>
                                     </div>
@@ -1532,7 +1532,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 3.53m out of 211m repositories</span>
+                                    <span class="gh">ranked 3.53m out of 207m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">2</div>
                                     </div>
@@ -2012,7 +2012,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 6 Jul 2024, 10:39:45 (timezone Asia/Tehran) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 6 Jul 2024, 11:45:00 (timezone Asia/Tehran) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
