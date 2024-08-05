@@ -143,6 +143,7 @@ body {
     background: none !important;
     border: none;
 }
+
 #sidenav button:hover {
     color: rgb(255, 0, 0) !important;
 }
@@ -155,9 +156,11 @@ body {
     body {
         font-size: 11pt;
     }
+
     #sidenav {
         padding-top: 15px;
     }
+
     #sidenav a {
         font-size: 13px;
     }
@@ -167,9 +170,11 @@ body {
     #githubImg img {
         transform: translateX(900px);
     }
+
     #container {
         margin-right: 0;
     }
+
     a:focus, button:focus, button {
         outline: 0;
     }
