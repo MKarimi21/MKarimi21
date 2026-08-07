@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="220" viewBox="0 0 500 220">
+  <style>
+    .bg { fill: #0d1117; rx: 12; }
+    .header { font: bold 20px sans-serif; fill: #58a6ff; }
+    .label { font: 14px sans-serif; fill: #8b949e; }
+    .value { font: bold 16px sans-serif; fill: #ffffff; }
+  </style>
+  <rect x="0" y="0" width="500" height="220" class="bg" />
+  
+  <image href="https://avatars.githubusercontent.com/u/123456789?v=4" x="20" y="20" height="80" width="80" clip-path="circle(40px at 60px 60px)" />
+  
+  <text x="120" y="45" class="header">Mostafa Karimi</text>
+  <text x="120" y="70" class="label">Industrial Engineer & MES Developer</text>
+
+  <line x1="20" y1="120" x2="480" y2="120" stroke="#30363d" stroke-width="2"/>
+
+  <text x="40" y="150" class="label">Age:</text>
+  <text x="200" y="150" class="value" id="age_data">{{AGE}}</text>
+
+  <text x="40" y="180" class="label">Repositories:</text>
+  <text x="200" y="180" class="value" id="repo_data">{{REPOS}}</text>
+
+  <text x="40" y="210" class="label">Followers:</text>
+  <text x="200" y="210" class="value" id="follower_data">{{FOLLOWERS}}</text>
+</svg>
