@@ -22,13 +22,16 @@
 
 I am an Industrial Engineer specializing in Systems Optimization, passionate about bridging the gap between complex manufacturing processes and modern software solutions.
 Currently, I serve as a Computerized Systems Expert at Moaddar Karan Engineering Co. (Turbine Blades Manufacturing). My expertise lies in implementing Business Process Management (BPM) systems and developing Manufacturing Execution Systems (MES). With a background in Inventory Planning, I have developed a profound understanding of shop-floor operations, supply chain, and maintenance workflows (EM/CM), which now serves as the foundation for my software architecture designs.
+<br/>
 My vision is to build Smart Manufacturing systems that go beyond mere data collection. I am currently developing a comprehensive tracking and cost-calculation system that integrates mathematical optimization models (using Python & Pyomo) to enhance production planning and decision-making.
+<br/>
 To achieve this, I am actively expanding my tech stack in Web and Mobile Development (React, Flutter, FastAPI) to create user-friendly, data-driven applications for both management and shop-floor operators.
 Key Interests: 
-🔹 Mathematical Modeling & Operations Research (Pyomo) 
-🔹 MES/ERP Development & Process Automation 
-🔹 Industrial AI & Predictive Maintenance 
-🔹 Industrial Simulation (FlexSim) & Digital Twins
+<br/>
+🔹 Mathematical Modeling & Operations Research (Pyomo) <br/>
+🔹 MES/ERP Development & Process Automation <br/>
+🔹 Industrial AI & Predictive Maintenance <br/>
+🔹 Industrial Simulation (FlexSim) & Digital Twins <br/>
 
 </p>
 
