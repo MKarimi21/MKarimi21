@@ -1,25 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="220" viewBox="0 0 500 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="240" viewBox="0 0 500 240">
   <style>
-    .bg { fill: #0d1117; rx: 12; }
-    .header { font: bold 20px sans-serif; fill: #58a6ff; }
+    .bg { fill: #0d1117; }
+    .card { fill: #161b22; }
+    .header { font: bold 22px sans-serif; fill: #58a6ff; }
+    .sub-header { font: 14px sans-serif; fill: #8b949e; }
     .label { font: 14px sans-serif; fill: #8b949e; }
-    .value { font: bold 16px sans-serif; fill: #ffffff; }
+    .value { font: bold 16px sans-serif; fill: #3fb950; }
   </style>
-  <rect x="0" y="0" width="500" height="220" class="bg" />
   
-  <image href="https://avatars.githubusercontent.com/u/123456789?v=4" x="20" y="20" height="80" width="80" clip-path="circle(40px at 60px 60px)" />
+  <!-- پس‌زمینه کلی -->
+  <rect x="0" y="0" width="500" height="240" class="bg" rx="12" />
   
-  <text x="120" y="45" class="header">Mostafa Karimi</text>
-  <text x="120" y="70" class="label">Industrial Engineer & MES Developer</text>
+  <!-- کادر داخلی -->
+  <rect x="10" y="10" width="480" height="220" class="card" rx="10" />
+  
+  <!-- عکس پروفایل شما (آدرس Raw گیت‌هاب) -->
+  <defs>
+    <clipPath id="circleView">
+      <circle cx="70" cy="70" r="50" />
+    </clipPath>
+  </defs>
+   <image href="https://raw.githubusercontent.com/MKarimi21/MKarimi21/main/assets/profile.png" x="20" y="20" height="100" width="100" clip-path="url(#circleView)" />
+  
+  <!-- نام و عنوان -->
+  <text x="140" y="55" class="header">Mostafa Karimi</text>
+  <text x="140" y="80" class="sub-header">Industrial Engineer & MES Developer</text>
+  <text x="140" y="105" class="sub-header">Bridging Manufacturing & Software</text>
 
-  <line x1="20" y1="120" x2="480" y2="120" stroke="#30363d" stroke-width="2"/>
+  <!-- خط جداکننده -->
+  <line x1="20" y1="140" x2="480" y2="140" stroke="#30363d" stroke-width="2"/>
 
-  <text x="40" y="150" class="label">Age:</text>
-  <text x="200" y="150" class="value" id="age_data">{{AGE}}</text>
+  <!-- آمار -->
+  <text x="40" y="170" class="label">Age:</text>
+  <text x="180" y="170" class="value" id="age_data">__AGE__</text>
 
-  <text x="40" y="180" class="label">Repositories:</text>
-  <text x="200" y="180" class="value" id="repo_data">{{REPOS}}</text>
+  <text x="40" y="200" class="label">Repositories:</text>
+  <text x="180" y="200" class="value" id="repo_data">__REPOS__</text>
 
-  <text x="40" y="210" class="label">Followers:</text>
-  <text x="200" y="210" class="value" id="follower_data">{{FOLLOWERS}}</text>
+  <text x="280" y="200" class="label">Followers:</text>
+  <text x="400" y="200" class="value" id="follower_data">__FOLLOWERS__</text>
 </svg>
