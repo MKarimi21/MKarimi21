@@ -1,22 +1,3 @@
-# سلام! 👋
-
-![Stats](dark_mode.svg#gh-dark-mode-only)
-![Stats](light_mode.svg#gh-light-mode-only)
-
-## درباره من
-
-اینجا می‌تونی بقیه اطلاعات خودت رو بنویسی!
-
-
-<a href="https://github.com/MKarimi21/MKarimi21">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg">
-    <img alt="MKarimi21's GitHub Profile README" src="light_mode.svg">
-  </picture>
-</a>
-
-<img src="intro.svg" alt="intro" width="100%">
-
 
 <p align="center">
   <a href="https://mkarimi21.ir/">
