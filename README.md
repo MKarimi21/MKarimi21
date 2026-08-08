@@ -69,8 +69,6 @@ Key Interests:
 <br>
   
   
-<a href="https://metrics.lecoq.io/about/mkarimi21"><img src="metrics-leftside.svg" align="left" width="47.5%"></img></a><a href="https://metrics.lecoq.io/about/mkarimi21"><img src="metrics-rightside.svg" align="right" width="47.5%"></img></a>
-
 <br>
 <br>
 
