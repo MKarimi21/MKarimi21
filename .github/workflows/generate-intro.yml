@@ -1,0 +1,37 @@
+name: Generate Intro SVG
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # هر شب ساعت ۳:۳۰ به وقت ایران
+  workflow_dispatch:      # امکان اجرای دستی
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate intro.svg
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python generate.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add intro.svg
+          git diff --staged --quiet || (git commit -m "Update intro.svg [skip ci]" && git push)
